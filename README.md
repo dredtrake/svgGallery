@@ -1,6 +1,6 @@
 # [SvgGallery]
 a simple pure javascript galery based on svg.js library.
-
+[demo](http://bacasable-lab.fr/svgGallery)
 ## Quick start
 
 Build on top of jquery & svg.js
