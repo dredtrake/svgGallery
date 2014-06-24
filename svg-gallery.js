@@ -1,14 +1,15 @@
 /*
 *
- * svg-gallery.js: a new svg gallery
- *
- * 2013-10-31
- * 
- * By dredtrake@gmail.com
- *
- * Public Domain.
- * NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
- */
+* svg-gallery.js: a new svg gallery
+*
+* 2013-10-31
+* 
+* By dredtrake@gmail.com
+*
+* Public Domain.
+* NO WARRANTY EXPRESSED OR IMPLIED. USE AT YOUR OWN RISK.
+*
+*/
 'use strict';
 var SvgGallery = (function(JQUERY, SVG){
 	var SvgGallery = function (params){
@@ -134,7 +135,7 @@ var SvgGallery = (function(JQUERY, SVG){
 			if (this.svg.addEventListener) {
 				// IE9, Chrome, Safari, Opera
 				this.svg.addEventListener('mousewheel', this.animateGallery.bind(this), false);
-				//~ // Firefox
+				// Firefox
 				this.svg.addEventListener('DOMMouseScroll', this.animateGallery.bind(this), false);
 			}
 			// IE 6/7/8
@@ -303,7 +304,8 @@ var SvgGallery = (function(JQUERY, SVG){
 					this.images[this.i + 1].front().backward();
 				}
 				this.images[this.i].clipWith(this.rect);				
-				this.rect.attr({'width' : this._width, 'height' : this._width})
+				this.rect
+					.attr({'width' : this._width, 'height' : this._width})
 					.move(0,  - (this._height / 2))
 					.animate(this.options._duration,  this.options._animationUpType) 
 					.move(this._width / 2, this._height / 2)
@@ -320,10 +322,10 @@ var SvgGallery = (function(JQUERY, SVG){
 			}
 		},
 		bubbles : function (){
-			// random bubbles
+			// todo : random bubbles
 		},
 		swipe : function (direction){
-			// swipe as diagonal do, but form a side (up, down, left, right)
+			// todo : swipe as diagonal do, but form a side (up, down, left, right)
 		},
 		getID : function getID (){
 			return this.images[this.i].data('id');
