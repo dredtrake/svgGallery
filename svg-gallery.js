@@ -143,8 +143,13 @@ var SvgGallery = (function(JQUERY, SVG){
 				this.svg.attachEvent('onmousewheel', this.animateGallery.bind(this));
 			}
 		},
-		animateGallery : function (_e){
-			var _delta = this.extractDelta(_e);
+		animateGallery : function (_e, _click){
+			var _delta;
+			if(!_click){
+				_delta = this.extractDelta(_e);
+			}else{
+				_delta = _e;
+			}
 			switch(this.options._transition){
 				case 'diagonales' : 
 					this.diagonales(_delta);

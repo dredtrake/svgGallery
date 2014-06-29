@@ -102,16 +102,44 @@ textarea {
 html, body {
 	width: 100%;
 }
+
 #container {
-	width: 1024px;
+	position: relative;
+    width: 1024px;
 	margin: 0 auto;
 }	
+
 #canvas {
 	width: 1024px;
 	height: 576px;
 	margin: 0 0 5px;
 }
 
+a.fork img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+}
+
+.btn-left, .btn-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -2.5em;
+    cursor: pointer;
+}
+
+.btn-left {
+    left: -5%;
+}
+
+.btn-right {
+    right: -5%;
+}
+
+.btn-left i, .btn-right i {
+    font-size: 5em;
+}
 
 /* ==========================================================================
    Helper classes

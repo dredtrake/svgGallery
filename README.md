@@ -5,9 +5,7 @@ a simple pure javascript galery based on svg.js library.
 
 Build on top of jquery & svg.js
 
-Clone the git repo — `git clone
-https://github.com/....git` - and checkout the tagged release you'd like to use.
-
+Clone the git repo — `git clone https://github.com/dredtrake/svgGallery.git` - and checkout the tagged release you'd like to use.
 
 ## Features
 
@@ -19,13 +17,13 @@ https://github.com/....git` - and checkout the tagged release you'd like to use.
 ## Documentation
 
 quick init : 
-`
+```
 var gallery = new SvgGallery({
 				_item : 'canvas',
 				_dataURL : 'http://domaine.com/json/example.json',
 			});
 gallery.init();
-`
+```
 
 ## Contributing
 
